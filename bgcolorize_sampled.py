@@ -40,9 +40,11 @@ def stylize(image):
 
 
 if __name__ == '__main__':
+	# call script in terminal as: python bgcolorize_sampled.py
+	# specify target_folder and output_folder
 	target_folder = 'Icons'
 	output_folder = 'Output'
-	file_list = os.listdir('Icons')
+	file_list = os.listdir(target_folder)
 
 	for image_name in file_list:
 		image_path = target_folder + '/' + image_name
